@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Covered+By+Your+Grace&family=Graduate&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.Backdround {
+  background-color: #e8d291;
+  padding: 90px 70px;
+  padding-bottom: 70px;
+}
+
+.Frog2 {
+  object-fit: cover;
+  border-radius: 30px;
+}
+.FirstSection {
+  gap: 42px;
+  display: flex;
+}
+
+.Textaboyt {
+  font-size: 22px;
+  transform: rotate(-1deg);
+  font-weight: 500;
+  line-height: 135%;
+  text-align: center;
+
+  font-family: cursive;
+  font-style: normal;
+  color: black;
+}
+.TextBlock {
+  color: black;
+}
+
+.HeadTextaboyt {
+  justify-content: center;
+  display: flex;
+  font-size: 4.2rem; /* Розмір шрифту */
+  color: black; /* Колір тексту */
+  font-family: "Covered By Your Grace";
+
+  --framer-font-size: 629.0239608462923px;
+  --framer-letter-spacing: -0.04em;
+  --framer-line-height: 60%;
+  --framer-text-alignment: center;
+  --framer-text-stroke-width: 3px;
+}
+
+@font-face {
+  font-family: "Covered By Your Grace";
+  src: url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Graduate&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap")
+      format("woff2"),
+    url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Graduate&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,48 @@
+.HeaderTextJoin {
+  justify-content: center;
+  display: flex;
+  font-size: 4.2rem; /* Розмір шрифту */
+  color: black;
+  font-family: "Covered By Your Grace";
+
+  --framer-font-size: 629.0239608462923px;
+  --framer-letter-spacing: -0.04em;
+  --framer-line-height: 60%;
+  --framer-text-alignment: center;
+  --framer-text-stroke-width: 3px;
+}
+
+@font-face {
+  font-family: "Covered By Your Grace";
+  src: url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Graduate&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap")
+      format("woff2"),
+    url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Graduate&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Backdround {
+  background-color: #e8d291;
+  padding: 50px 70px;
+  padding-bottom: 70px;
+}
+
+.topImage {
+  cursor: pointer;
+  width: 80px;
+  border-radius: 0px; /* Закруглені кути */
+  transition: transform 0.3s ease; /* Плавний перехід */
+}
+
+.topImage:hover {
+  cursor: pointer;
+  transform: scale(1.1); /* Збільшення на 10% при наведенні */
+}
+
+.topImages {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

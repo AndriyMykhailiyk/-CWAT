@@ -1,0 +1,76 @@
+.BackdroundCat {
+  background-image: url("../../../../public//assets/img/background/lastPage/k9P9PETFutvUjyj4RQ9kZnhj0.avif");
+  width: 100vw;
+  height: 80vh; /* Змінено на 80% висоти екрану */
+  background-size: cover; /* Щоб заповнити весь блок без повторення */
+  background-repeat: no-repeat; /* Забороняє повторення */
+  background-position: center top;
+  position: relative;
+  clip-path: inset(0 0 0% 0); /* Обрізає 20% знизу */
+  padding: 50px 100px;
+}
+
+.SimpleItem {
+  width: 450px;
+  opacity: 1;
+  border-radius: 15px;
+  border: 10px solid #4e4a5d;
+  padding: 20px;
+  background-image: url("../../../../public//assets/img/background/FThHGS4oSiwN1s0FCeTsPT0B4.avif");
+}
+
+.WrapperSimpleItem {
+  color: #540a01;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.Visit {
+  font-family: cursive;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.ItemContainer {
+  display: flex;
+  gap: 10px;
+  transform: rotate(-1deg); /* Повертає на 5 градусів */
+}
+
+.HeaderText {
+  font-family: "Covered By Your Grace";
+  font-weight: 400;
+  font-size: 1.7rem; /* Розмір шрифту */
+}
+
+.HeadTextaboyt {
+  justify-content: center;
+  display: flex;
+  color: black; /* Колір тексту */
+
+  --framer-font-size: 629.0239608462923px;
+  --framer-letter-spacing: -0.04em;
+  --framer-line-height: 60%;
+  --framer-text-alignment: center;
+  --framer-text-stroke-width: 3px;
+}
+
+@font-face {
+  font-family: "Covered By Your Grace";
+  src: url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Graduate&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap")
+      format("woff2"),
+    url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Graduate&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ImgCatCoin {
+  position: absolute;
+  bottom: 0; /* Фото буде в самому низу */
+  left: 50%; /* Центруємо по горизонталі */
+  transform: translateX(-50%); /* Вирівнюємо по центру */
+  display: flex;
+  justify-content: center; /* Додатково центрує фото */
+}

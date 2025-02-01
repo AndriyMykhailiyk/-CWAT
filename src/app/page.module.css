@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+
 .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
@@ -68,10 +70,7 @@
   padding: 0 20px;
   border: none;
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -165,4 +164,93 @@ a.secondary {
   .logo {
     filter: invert();
   }
+}
+
+.background {
+  background-image: url("../../public/assets/img/background/GUpyzUJqJfBb39vcmZ01ZgWlQ.avif");
+
+  width: 100vw;
+  height: 90vh; /* Змінено на 80% висоти екрану */
+
+  background-size: cover; /* Щоб заповнити весь блок без повторення */
+  background-repeat: no-repeat; /* Забороняє повторення */
+  background-position: center top; /* Вирівнює фон по центру зверху */
+  background-position: center top -230px; /* Піднімає фон на 50px */
+
+  position: relative;
+}
+
+.leftImage {
+  position: absolute;
+  left: -275px;
+  top: 20%; /* Вирівнюємо по центру */
+  transform: translateY(-50%) rotate(10deg); /* Вирівнює фото відносно центру */
+}
+
+.rightImage {
+  position: absolute;
+  right: -260px;
+  top: 24%;
+  transform: translateY(-50%) rotate(-10deg); /* Повертаємо в інший бік */
+}
+
+.topImages {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Вирівнює по центру */
+  display: flex;
+  gap: 17px; /* Відступи між картинками */
+}
+
+/* Стилі для картинок зверху */
+.topImage {
+  cursor: pointer;
+  width: 68px;
+  border-radius: 0px; /* Закруглені кути */
+  transition: transform 0.3s ease; /* Плавний перехід */
+}
+
+.topImage:hover {
+  cursor: pointer;
+  transform: scale(1.1); /* Збільшення на 10% при наведенні */
+}
+
+@font-face {
+  font-family: "Covered By Your Grace";
+  src: url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Graduate&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap")
+      format("woff2"),
+    url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Graduate&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.centerText {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11rem; /* Розмір шрифту */
+  color: #e7c518; /* Колір тексту */
+  text-align: center;
+  z-index: 10; /* Для перекриття інших елементів, якщо потрібно */
+  font-family: "Covered By Your Grace";
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000;
+
+  --framer-font-size: 629.0239608462923px;
+  --framer-letter-spacing: -0.04em;
+  --framer-line-height: 90%;
+  --framer-text-alignment: center;
+  --framer-text-color: rgb(237, 201, 19);
+  --framer-text-stroke-width: 3px;
+}
+.wrappCat {
+  display: flex;
+  justify-content: center; /* Центрує елементи по горизонталі */
+  height: 300px;
+  padding-top: 280px;
+}
+.CatChill {
+  padding-left: -20px;
 }

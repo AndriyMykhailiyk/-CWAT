@@ -1,95 +1,79 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-
+import baclfr from "../../public/assets/img/palm/EbEi5qpJPHHfCA1OYWAUeZw8Zk.avif";
+import right from "../../public/assets/img/palm/drkvhE6AlVl4jpcUZC76xWyZo.avif";
+import img1 from "../../public/assets/svg/download.svg";
+import img2 from "../../public/assets/svg/download1.svg";
+import img3 from "../../public/assets/svg/download2.svg";
+import Marquee from "./components/Marquee/Marquee";
+import Frog from "./components/Frog/Frog";
+import Together from "./components/Together/Together";
+import CatWithCoin from "./components/CatPage/CatPage";
+import JoinToUs from "./components/Join/JoinToUs";
+import Chill from "../../public/assets/img/cat/NrqBpiUJBY3LykJhj9Qr3JbMetA.avif";
+import motion from "framer-motion";
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <>
+      <div className={styles.background}>
+        <div className={styles.topImages}>
+          <Image
+            className={styles.topImage}
+            src={img2}
+            alt="Фото 3"
+            width={128}
+            height={100}
+          />
+          <Image
+            className={styles.topImage}
+            src={img3}
+            alt="Фото 3"
+            width={128}
+            height={100}
+          />
+          <Image
+            className={styles.topImage}
+            src={img1}
+            alt="Фото 2"
+            width={128}
+            height={100}
+          />
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Image
+          className={styles.leftImage}
+          src={baclfr}
+          alt="Фото 1"
+          width={650}
+          height={680}
+        />
+
+        <Image
+          className={styles.rightImage}
+          src={right}
+          alt="Фото справа"
+          width={600}
+          height={680}
+        />
+        <div className={styles.wrappCat}>
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src={Chill}
+            alt="Фото справа"
+            width={800}
+            height={420}
+            className={styles.CatChill}
           />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+      </div>{" "}
+      <Marquee />
+      <div className={styles.centerText}>
+        <h1>$CWAT</h1>
+      </div>{" "}
+      <Frog />
+      <Together />
+      <Marquee />
+      <CatWithCoin />
+      <Marquee />
+      <JoinToUs />
+    </>
   );
 }

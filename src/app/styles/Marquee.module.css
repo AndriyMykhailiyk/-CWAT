@@ -1,0 +1,67 @@
+.marqueeContainer {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #f2c800; /* Жовтий фон */
+  display: flex;
+  align-items: center;
+  height: 90px;
+  border-top: 3px solid black; /* Залишити верхню рамку */
+  border-bottom: 3px solid black; /* Залишити нижню рамку */
+  position: relative;
+}
+
+.marqueeContent {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.marqueeContainer::before,
+.marqueeContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 900px; /* Ширина розмиття */
+  height: 200%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marqueeContainer::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(242, 200, 0, 1),
+    rgba(242, 200, 0, 0)
+  );
+}
+
+.marqueeContainer::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(242, 200, 0, 1),
+    rgba(242, 200, 0, 0)
+  );
+}
+
+.marqueeText {
+  font-size: 40px;
+  color: black;
+  font-family: "Covered By Your Grace";
+}
+
+@font-face {
+  font-family: "Covered By Your Grace";
+  src: url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Graduate&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap")
+      format("woff2"),
+    url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Graduate&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
